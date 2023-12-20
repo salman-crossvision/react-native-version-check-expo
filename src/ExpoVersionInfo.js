@@ -24,9 +24,9 @@ const PACKAGE_NAME = RNVersionCheck.packageName;
 const CURRENT_BUILD_NUMBER = RNVersionCheck.currentBuildNumber;
 const CURRENT_VERSION = RNVersionCheck.currentVersion;
 
-export default function(country) {
+export default function() {
     return {
-        getCountry: () => Promise.resolve(country),
+        getCountry: () => Promise.resolve("US"),
         getPackageName: () => PACKAGE_NAME,
         getCurrentBuildNumber: () => CURRENT_BUILD_NUMBER,
         getCurrentVersion: () => CURRENT_VERSION,
